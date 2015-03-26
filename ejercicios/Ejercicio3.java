@@ -3,8 +3,16 @@ package ejercicios;
 public class Ejercicio3 {
 
 	public static boolean esPrimo(int numero) {
-		// TODO
-		return false;
+
+		// seguro hay soluciones mas optimas, no las googleo para acatar la consigna
+		if (numero == 0 || numero == 1) return false;
+		int i = numero;
+
+		while (i > 2) {
+			i--;
+			if (numero % i == 0) return false;
+		}
+		return true;
 	}
 			
 	public static void main(String[] args) {
@@ -27,10 +35,10 @@ public class Ejercicio3 {
 		// El numero 5 es primo? true
 
 		System.out.println("El numero " + 17 + " es primo? " + esPrimo(17));
-		// El numero 17 es primo? True
+		// El numero 17 es primo? true
 
 		System.out.println("El numero " + 18 + " es primo? " + esPrimo(18));
-		// El numero 18 es primo? true
+		// El numero 18 es primo? false
 
 	}
 
