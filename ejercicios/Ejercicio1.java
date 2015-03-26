@@ -3,8 +3,7 @@ package ejercicios;
 public class Ejercicio1 {
 
 	public static double calcularPrecioFinal(double precioDelProducto) {
-		// TODO
-		return 0;
+		return precioDelProducto * 1.21;
 	}
 			
 	public static void main(String[] args) {
