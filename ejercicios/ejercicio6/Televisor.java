@@ -9,6 +9,22 @@ public class Televisor extends Electrodomestico {
         this.pulgadas = pulgadas;
     }
 
+    public Televisor(int pulgadas) {
+        this.pulgadas = pulgadas;
+    }
+
+    @Override public double precioFinal() {
+        return super.precioFinal() + calcularAdicionalPulgadas();
+    }
+
+    private double calcularAdicionalPulgadas() {
+        int pulgadas = getPulgadas();
+        if (pulgadas >= 10 && pulgadas <= 15) return 150;
+        if (pulgadas >= 16 && pulgadas <= 20) return 500;
+        if (pulgadas > 20) return 700;
+        return 0;
+    }
+
     public int getPulgadas() {
         return pulgadas;
     }
