@@ -12,8 +12,11 @@ public class Ejercicio4 {
 		while (num != -1) {
 
 			System.out.println("Ingrese un numero para saber si es primo o -1 para salir: ");
+			while (!scanner.hasNextInt()) {
+				System.out.println("Error. Debe ingresar un numero");
+				scanner.nextLine();
+			}
 			num = scanner.nextInt();
-
 			final boolean esPrimo = Ejercicio3.esPrimo(num);
 
 			if (num > -1) {
@@ -21,5 +24,7 @@ public class Ejercicio4 {
 				else System.out.println("No es primo");
 			}
 		}
+
+		scanner.close();
 	}
 }
