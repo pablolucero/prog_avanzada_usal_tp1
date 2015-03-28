@@ -13,6 +13,11 @@ public class Lavarropas extends Electrodomestico {
         this.carga = carga;
     }
 
+
+    public Lavarropas() {
+        this.carga = 5;
+    }
+
     @Override public double precioFinal() {
         return super.precioFinal() + calcularAdicionalCarga();
     }

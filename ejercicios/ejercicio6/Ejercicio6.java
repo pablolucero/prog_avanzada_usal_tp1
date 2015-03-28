@@ -9,11 +9,13 @@ public class Ejercicio6 {
 
 		List<Electrodomestico> lote = new ArrayList<>();
 
-		Electrodomestico e1 = new Televisor(16);
+		Electrodomestico e0 = new Televisor(16);
+		Electrodomestico e1 = new Televisor();
 		Electrodomestico e2 = new Lavarropas(5);
 		Electrodomestico e3 = new Lavarropas(10);
-		Electrodomestico e4 = new Lavarropas(15);
+		Electrodomestico e4 = new Lavarropas();
 
+		lote.add(e0);
 		lote.add(e1);
 		lote.add(e2);
 		lote.add(e3);
