@@ -16,10 +16,6 @@ public class Ejercicio2 {
 		return sb.toString();
 	}
 
-	private static boolean esPar(int numero) {
-		return numero % 2 == 0;
-	}
-
 	public static void main(String[] args) {
 		int n1 = 7;
 		System.out.println("Numeros pares entre 0 y " + n1 + ": " + numerosParesEnRangoN(n1));
