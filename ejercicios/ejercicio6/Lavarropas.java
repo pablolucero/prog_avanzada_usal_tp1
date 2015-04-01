@@ -10,11 +10,13 @@ public class Lavarropas extends Electrodomestico {
     }
 
     public Lavarropas(int carga) {
+        super();
         this.carga = carga;
     }
 
 
     public Lavarropas() {
+        super();
         this.carga = 5;
     }
 

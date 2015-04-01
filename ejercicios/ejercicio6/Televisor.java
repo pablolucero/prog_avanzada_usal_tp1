@@ -10,10 +10,12 @@ public class Televisor extends Electrodomestico {
     }
 
     public Televisor(int pulgadas) {
+        super();
         this.pulgadas = pulgadas;
     }
 
     public Televisor() {
+        super();
         this.pulgadas = 15;
     }
 

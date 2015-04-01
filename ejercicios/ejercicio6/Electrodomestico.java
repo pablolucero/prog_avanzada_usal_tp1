@@ -2,7 +2,6 @@ package ejercicios.ejercicio6;
 
 public abstract class Electrodomestico {
 
-
     private int precioBase;
     private Color color;
     private CategoriaConsumoEnergetico consumoEnergetico;
